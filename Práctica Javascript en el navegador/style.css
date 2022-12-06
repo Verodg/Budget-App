@@ -1,0 +1,81 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.title {
+    background-color: white;
+    opacity: 0,8;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.container {
+    padding: 30px 40px;
+    border-radius: 1rem;
+    border: 3px solid white;
+    margin: 25px;
+    background-color: rgb(39, 231, 167)
+}
+
+h1 {
+    letter-spacing: 3px;
+    margin: 0;
+    margin: 10px 0 10 px;
+    text-transform: capitalize;
+}
+
+h3 {
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    text-align: center;
+    color: white;
+}
+
+h4 {
+    margin-right: 0;
+    text-transform: capitalize;
+    color: white;
+}
+
+#balance {
+    color:silver
+}
+
+.Income-expense {
+    background-color: silver;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 6px rgba(58, 73, 80, 0.685),
+    0 5px 6px rgba(58, 73, 80, 0.685);
+
+}
+
+.Income-expense > div {
+    flex: 1;
+    text-align: center;
+}
+
+.income,
+.expense,
+#balance {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+    font-weight: lighter;
+}
+
