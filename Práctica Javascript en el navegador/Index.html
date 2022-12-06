@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Control gastos</title>
+    
+</head>
+<body>
+    <div class="container">
+        <p id="error_msg"></p>
+        <div class="title">
+            <hi class="title">
+                Mis ahorros <a href="#"></a>
+
+            </hi>
+        </div>
+
+        <h3>Savings app</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Description</label>
+                <input
+                type="text"
+                id="text"
+                onfocus="this.value=''"
+                placeholder="Enter text..."/>
+            </div>
+
+            <div class="form-control">
+                <label for="amount">Amount(+/-) <br /> </label>
+                <input
+                type="number"
+                id="amount"
+                onfocus="this.value=''"
+                placeholder="Enter value..."/>
+            </div>
+            <button class="btn"> Add New Transaction</button>
+        </form>
+        <br />
+
+        <div class="Income-expense">
+            <div class="bg-light">
+                <h4> Ingresos</h4>
+                <p class="income" id="income">€0.00</p>
+            </div>
+            <div class="bg-light">
+                <h4> Gastos</h4>
+                <p class="expense" id="expense">€0.00</p>
+            </div>
+            <div class="bg-light">
+                <h4> Saldo Total</h4>
+                <p id="balance">€0.00</p>
+            </div>
+        </div>
+        <h3> Movimientos</h3>
+        <ul id="list" class="list"></ul>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
