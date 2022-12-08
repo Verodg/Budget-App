@@ -1,155 +1,141 @@
 
 * {
     box-sizing: border-box;
-}
-
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+   
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: antiquewhite;
-}
-
-.title {
-    background-color: white;
-    opacity: 0,8;
+    background-color: rgb(255, 255, 255);
+  }
+  .title {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.9;
     text-align: center;
     border-radius: 1rem;
-}
-
-.container {
+  }
+  
+  .container {
     padding: 30px 40px;
     border-radius: 1rem;
-    border: 3px solid white;
+    border: 4px solid rgb(0, 0, 0);
     margin: 25px;
-    background-color: rgb(39, 231, 167)
-}
+    /* width: 350px; */
+    background-color: rgba(248, 248, 248, 0.685);
+  }
+  
 
-h1 {
-    letter-spacing: 3px;
-    margin: 0;
-    margin: 10px 0 10 px;
-    text-transform: capitalize;
-}
-
-h3 {
-    border-bottom: 1px solid whitesmoke;
+  
+  h3 {
+    border-bottom: 1px solid rgb(0, 0, 0);
     padding-bottom: 5px;
     margin-bottom: 12px;
     text-align: center;
-    color: white;
-}
-
-h4 {
-    margin-right: 0;
-    text-transform: capitalize;
-    color: white;
-}
-
-#balance {
-    color:silver
-}
-
-.Income-expense {
-    background-color: rgb(128, 125, 125);
+    color: rgb(0, 0, 0);
+  }
+  
+  h4 {
+    margin: 0;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+  }
+  #balance {
+    color: rgb(0, 0, 0);
+  }
+  
+  .income-expense {
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
     padding: 20px;
     border-radius: 1rem;
     box-shadow: 0 5px 6px rgba(58, 73, 80, 0.685),
-    0 5px 6px rgba(58, 73, 80, 0.685);
-
-}
-
-.Income-expense > div {
+      0 5px 6px rgba(58, 73, 80, 0.685);
+  }
+  
+  .income-expense > div {
     flex: 1;
     text-align: center;
-}
-
-.income,
-.expense,
-#balance {
+  }
+  
+  .income,
+  .expense,
+  #balance {
     font-size: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin: 5px 0;
-    font-weight: lighter;
-}
-
-.income {
-    color: rgb(143, 238, 143);
-}
-
-.expense {
-    color: rgb(243, 111, 111);
-}
-
-#balance {
-    color: blue;
-}
-
-input[type="text"],
-input[type="number"] {
-    border:1px solid white;
+    font-weight: bolder;
+  }
+  
+  .income {
+    color: green;
+  }
+  .expense {
+    color: #c34234d3;
+  }
+  #balance {
+    color: rgb(72, 90, 255);
+  }
+  
+  
+  input[type="text"],
+  input[type="number"] {
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 1rem;
     padding: 5px;
     width: 100%;
     font-size: 16px;
     outline: none;
-    box-shadow: 1px 2px 1px silver;
-}
-
-/* separación entre las casillas de descripción*/
-label {
+    box-shadow: 1px 2px 1px #000000;
+  }
+  label {
     display: inline-block;
     margin: 10px 0;
     font-weight: bolder;
-}
-
-.btn {
-    width: 100%;
-    margin-top: 20px;
+  }
+  
+  .btn {
+    width: 50%;
+    margin-top: 30px;
     padding: 8px 0;
     border-radius: 1rem;
     outline: none;
-    background-color: rgb(122, 121, 121);
-    color: blanchedalmond;
-    letter-spacing: 2px;
-    text-decoration: uppercase;
+    background-color: rgb(97, 99, 100);
+    color: whitesmoke;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     font-size: 12px;
-}
-
-.btn:hover {
-    color: rgb(2, 2, 2);
-    background-color: rgb(116, 116, 240);
-}
-
-/*
-.delete-btn {
-
-} */
-
-#text:focus,
-#amount:focus {
-    width: 110%;
-    transition: 0,5s;
-    border-bottom: 2px solid silver;
-    border-right: 2px solid silver;
-}
-
-ul {
+  }
+  .btn:hover {
+    color: rgb(8, 8, 8);
+    background-color: rgb(78, 50, 50);
+  }
+  
+  .delete-btn {
+    background-color: rgb(139, 192, 235);
+    border-radius: 1rem;
+    outline: none;
+    float: right;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+  }
+  
+  ul {
     list-style: none;
-    display: none;
-
-}
-ul li {
+    display: inline;
+  }
+  ul li {
     font-weight: bolder;
     font-size: 21px;
   }
-
+  
   #error_msg {
     color: red;
     background-color: rgb(224, 189, 183);
@@ -159,18 +145,7 @@ ul li {
   }
   
   .list {
-    color: azure;
-  }
-  
-  .minus,
-  .plus {
-    margin-bottom: 8px;
-    border-bottom: 1px solid rgb(177, 177, 177);
-  }
-  .minus:hover,
-  .plus:hover {
-    background-color: rgb(114, 114, 114);
-    cursor: pointer;
+    color: rgb(0, 0, 0);
   }
  
 

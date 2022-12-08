@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Control gastos</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     
-</head>
-<body>
+    <title>Mis Ahorros</title>
+  </head>
+  <body>
     <div class="container">
-        <p id="error_msg"></p>
-        <div class="title">
-            <h1 class="title">
-                Mis ahorros <a href="#"></a>
+      <p id="error_msg"></p>
+      <div class="title">
+        <h1 class="title">Mis Ahorros</h1>
+      </div>
 
-            </h1>
+     
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Concepto</label>
+          <input
+            type="text"
+            id="text"
+            onfocus="this.value=''"
+            placeholder="Añade el concepto..."
+          />
         </div>
-
-        <h3></h3>
-        <form id="form">
-            <div class="form-control">
-                <label for="text">Descripción</label>
-                <input
-                type="text"
-                id="text"
-                onfocus="this.value=''"
-                placeholder="Breve descripción..."/>
-            </div>
-
-            <div class="form-control">
-                <label for="amount">Cantidad en € (+/-) <br /> </label>
-                <input
-                type="number"
-                id="amount"
-                onfocus="this.value=''"
-                placeholder="Introduce la cantidad..."/>
-            </div>
-            <button class="btn">Añade la Transacción</button>
-        </form>
-        <br />
-
-        <div class="Income-expense">
-            <div class="bg-light">
-                <h4> Ingresos</h4>
-                <p class="income" id="income">€0.00</p>
-            </div>
-            <div class="bg-light">
-                <h4> Gastos</h4>
-                <p class="expense" id="expense">€0.00</p>
-            </div>
-            <div class="bg-light">
-                <h4> Total</h4>
-                <p id="balance">€0.00</p>
-            </div>
+        <div class="form-control">
+          <label for="amount">Cantidad en € (+ ingresos /- gastos) <br /> </label>
+          <input
+            type="number"
+            id="amount"
+            onfocus="this.value=''"
+            placeholder="Añade la cantidad..."
+          />
         </div>
-        <h3> Movimientos</h3>
-        <ul id="list" class="list"></ul>
+        <button class="btn">Añadir</button>
+      </form>
+      <br />
+
+      <div class="income-expense">
+        <div>
+          <h4>Ingresos</h4>
+          <p class="income" id="income">€0.00</p>
+        </div>
+        <div>
+          <h4>Gastos</h4>
+          <p class="expense" id="expense">€0.00</p>
+        </div>
+        <div>
+          <h4>Balance</h4>
+          <p id="balance">€0.00</p>
+        </div>
+      </div>
+      <h3>Movimientos</h3>
+      
+      <ul id="list" class="list"></ul>
     </div>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
